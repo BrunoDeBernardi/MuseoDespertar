@@ -279,12 +279,6 @@ footer{
     width: 40%;
 }
 
-
-
-@media (max-width: 992px){
-    
-}
-
 @media (max-width: 576px) {
     .footer-div{
         flex-direction: column;
