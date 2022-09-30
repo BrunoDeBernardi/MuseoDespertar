@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="icon.ico">
+    <script src="https://kit.fontawesome.com/3347b6e4b9.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Museo Despertar</title>
+</head>
+<body>
+    <header>
+        <nav class="d-flex align-items-center position-absolute">
+            <div class="nav-div d-flex align-items-center">
+                <a href="index.html">
+                    <img class="nav-logo" src="images/logo.png">
+                </a>
+            </div>
+            <i class="fa-solid fa-bars" id="btn-menu"></i>
+            <ul class="nav-ul d-flex align-items-center justify-content-between list-unstyled" id="nav-desplegable">
+                <li class="nav-li d-flex align-items-center"><a class="nav-a" href="index.html">Inicio</a></li>
+                <li class="nav-li d-flex align-items-center"><a class="nav-a" href="visitas.html">Visitas</a></li>
+                <li class="nav-li d-flex align-items-center"><a class="nav-a" href="exhibiciones.html">Exhibiciones</a></li>
+                <li class="nav-li d-flex align-items-center">
+                    <div class="actual-lang">
+                        Es<img class="img-icon" src="images/flags/Flag_of_Argentina.png"><img class="img-icon" src="images/flags/Flag_of_Spain.png"><i class="fa-solid fa-caret-down" id="down-lang"></i>
+                    </div>
+                    <ul class="lang-ul list-unstyled position-absolute">
+                        <li class="nav-li d-flex align-items-center lang-li"><a class="nav-a" href="english/tours.html">En<img class="img-icon" src="images/flags/Flag_of_the_United_Kingdom.png"><img class="img-icon" src="images/flags/Flag_of_USA.png"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="front-title d-flex flex-column position-absolute">
+            <p>Mes de Septiembre</p>
+            <h1 id="main-title">Agendar Visitas</h1>
+        </div>
+        <img src="images/header/visitas-header.jpg" alt="" class="header-img">
+    </header>
+    <main>
+        <section class="container-fluid">
+            <h2>Anotarse a una visita</h2>
+            <div class="container-fluid">
+                <div class="form-container">
+                    <form id="visitas-form" action="" method="">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre Completo</label>
+                            <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre" class="form_input" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-Mail</label>
+                            <input class="form-control" id="email" type="mail" placeholder="Ingrese su e-mail" class="form_input" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dni" class="form-label">DNI</label>
+                            <input class="form-control" id="dni" type="number" placeholder="Ingrese su DNI" class="form_input" name="dni" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="numero" class="form-label">Teléfono</label>
+                            <input class="form-control" id="numero" type="number" placeholder="Ingrese su número" class="form_input" name="numero" required>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-lg-6 select-container left-select-container">
+                                <label for="exhibition-select" class="form-label">Exhibiciones disponibles</label>
+                                <select id="exhibition-select" class="form-select form-control">
+                                    <option id="antonioBerni" value="antonioBerni">Antonio Berni</option>
+                                    <option id="benitoQuinquela" value="benitoQuinquela">Benito Quinquela</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 select-container right-select-container">
+                                <label for="horario" class="form-label">Horarios Disponibles</label>
+                                <select id="horario" class="form-select form-control">
+                                    <option value="10">10:00</option>
+                                    <option value="12">12:00</option>
+                                    <option value="16">16:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-container">
+                                <label for="idioma" class="form-label">Idioma</label>
+                                <select id="idioma" class="form-select form-control">
+                                    <option value="Es">Español</option>
+                                    <option value="En">Inglés</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-end">
+                            <button class="btn btn-primary submit-btn" type="submit">Confirmar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <ul class="resultados list-unstyled"></ul>
+            </div>
+        </section>
+    </main>
+    <footer class="d-flex flex-column align-items-center">
+        <div class="footer-div d-flex justify-content-evenly">
+            <div>
+                <h5 class="footer-title">Contacto</h5>
+                <ul class="list-unstyled">
+                    <li>Av. Del Libertador 1473</li>
+                    <li>Ciudad Autónoma de Buenos Aires Argentina</li>
+                    <li>+54 (011) 0000-0000</li>
+                    <li>info@despertar.gob.ar</li>
+                </ul>
+                <div class="col-6 d-flex justify-content-center social-media w-100">
+                    <a class="footer-icon" href="http://instragram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="footer-icon" href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="footer-icon" href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="footer-icon" href="http://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="footer-title">Horarios</h5>
+                <ul class="list-unstyled">
+                    <li>Martes a viernes, de 11.00 a 20.00.</li>
+                    <li>Sábado y domingo, de 10.00 a 20.00.</li>
+                    <li>Lunes: cerrado.</li>
+                </ul>
+                <div class="col-6 d-flex justify-content-center w-100">
+                    <img class="logo-footer" src="images/logo.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

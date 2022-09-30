@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../icon.ico">
+    <script src="https://kit.fontawesome.com/3347b6e4b9.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <title>Museo Despertar</title>
+</head>
+<body>
+    <header>
+        <nav class="d-flex align-items-center position-absolute">
+            <div class="nav-div d-flex align-items-center">
+                <a href="index.html">
+                    <img class="nav-logo" src="../images/logo.png">
+                </a>
+            </div>
+            <i class="fa-solid fa-bars" id="btn-menu"></i>
+            <ul class="nav-ul d-flex align-items-center justify-content-between list-unstyled" id="nav-desplegable">
+                <li class="nav-li d-flex align-items-center"><a class="nav-a" href="index.html">Main</a></li>
+                <li class="nav-li d-flex align-items-center"><a class="nav-a" href="tours.html">Tours</a></li>
+                <li class="nav-li d-flex align-items-center"><a class="nav-a" href="exhibits.html">Exhibits</a></li>
+                <li class="nav-li d-flex align-items-center">
+                    <div class="actual-lang">
+                        En<img class="img-icon" src="../images/flags/Flag_of_the_United_Kingdom.png"><img class="img-icon" src="../images/flags/Flag_of_USA.png"><i class="fa-solid fa-caret-down" id="down-lang"></i>
+                    </div>
+                    <ul class="lang-ul list-unstyled position-absolute">
+                        <li class="nav-li d-flex align-items-center lang-li"><a class="nav-a" href="../">Es<img class="img-icon" src="../images/flags/Flag_of_Argentina.png"><img class="img-icon" src="../images/flags/Flag_of_Spain.png"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="front-title d-flex flex-column position-absolute">
+            <p id="exb-destacada-p">From 12/09 to 15/09</p>
+            <h1 id="main-title">Antonio Berni: Revelations</h1>
+            <a class="header-a" href="visitas.html"><button class="header-btn">Schedule a visit</button></a>
+        </div>
+        <img src="../images/header/inicio-header.png" alt="" class="header-img">
+    </header>
+    <main>
+        <section class="row">
+            <div class="info-container col-xl-9">
+                <h2>Despertar Museum</h2>
+                <p class="info">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto obcaecati itaque molestias. Nulla modi beatae, eaque expedita, quasi asperiores quibusdam eos ducimus reprehenderit odit quis impedit quia nemo repellat perferendis placeat? Tempora doloribus dolore quia qui natus blanditiis suscipit ex perspiciatis recusandae mollitia ea placeat repudiandae excepturi, in voluptas! Beatae nesciunt unde nisi culpa voluptatibus iure magnam? Quos laudantium, minus illum facilis nam consectetur odio cupiditate ullam doloribus. Mollitia voluptas consectetur accusamus expedita accusantium doloremque a qui eligendi deserunt odit iusto sequi ipsum fugiat pariatur animi hic consequatur, rerum enim magnam distinctio earum dicta et minima. Molestias, quae laudantium? Sapiente explicabo consequatur harum aliquam aperiam repellat labore nemo similique veniam delectus consectetur ipsam odit blanditiis quidem rem sed accusantium voluptatibus itaque, facere cupiditate minus doloribus cum voluptates unde? Nemo, consequatur assumenda tempora eum nobis odio ratione dolorem voluptates omnis suscipit quasi ea molestiae distinctio sint quis, voluptatibus id doloremque dolore eaque rem quos veritatis nulla itaque tenetur. Architecto inventore at dolor aliquid, natus hic omnis explicabo quia in voluptates molestias minima voluptatum numquam! Possimus omnis explicabo, et aspernatur recusandae beatae, asperiores vero alias iste totam nostrum animi quam aliquam commodi incidunt corrupti, libero perspiciatis. Debitis incidunt sunt nemo enim maxime.
+                </p>
+                <h3>Visiting Days and Hours</h3>
+                <ul class="info list-unstyled">
+                    <li>Tuesday to friday: from 11.00 to 20.00.</li>
+                    <li>Saturday y Sunday: from 10.00 to 20.00.</li>
+                    <li>Monday: closed.</li>
+                </ul>
+            </div>
+            <div class="schedule col-xl-3">
+                <div class="schedule-top d-flex justify-content-center align-items-center">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Today at the Museum</p>
+                </div>
+                <ul class="schedule-ul list-unstyled">
+                    <li class="li-event">
+                        <p>10:00</p>
+                        <p>First shift of guided tours</p>
+                    </li>
+                    <li class="li-event">
+                        <p>12:00</p>
+                        <p>Second shift of guided tours</p>
+                    </li>
+                    <li class="li-event">
+                        <p>16:00</p>
+                        <p>Third shift of guided tours</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="exhibitions-section">
+            <div class="row card-row">
+                <div class="card-container col-lg-6">
+                    <a class="card-a" href="exhibits.html">
+                        <div class="card big-card">
+                            <img class="card-img-top" src="../images/cards/card-1.jpg" alt="Pintura 'La Manifestación' de Antonio Berni">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">La manifestación - Antonio Berni</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-container col-lg-6">
+                    <a class="card-a" href="exhibits.html">
+                        <div class="card big-card">
+                            <img class="card-img-top" src="../images/cards/card-2.jpg" alt="Pintura 'Efecto de sol' de Benito Quinquela">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Los dos amigos - Benito Quinquela</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-container col-lg-3">
+                    <a class="card-a" href="exhibits.html">
+                        <div class="card">
+                            <img class="card-img-top" src="../images/cards/card-3.jpg" alt="Pintura 'Pesadilla de los injustos' de Antonio Berni">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Pesadilla de los injustos - Antonio Berni</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-container col-lg-3">
+                    <a class="card-a" href="exhibits.html">
+                        <div class="card">
+                            <img class="card-img-top" src="../images/cards/card-4.jpg" alt="Pintura 'Juanito Laguna aprende a leer' de Antonio Berni">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Juanito Laguna aprende a leer - Antonio Berni</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-container col-lg-3">
+                    <a class="card-a" href="exhibits.html">
+                        <div class="card">
+                            <img class="card-img-top" src="../images/cards/card-5.jpg" alt="Pintura 'Fogata de San Juan' de Benito Quinquela">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Fogata de San Juan - Benito Quinquela</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-container col-lg-3">
+                    <a class="card-a" href="exhibits.html">
+                        <div class="card">
+                            <img class="card-img-top" src="../images/cards/card-6.jpg" alt="Pintura 'Los dos amigos' de Benito Quinquela">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Efecto de sol - Benito Quinquela</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="d-flex flex-column align-items-center">
+        <div class="footer-div d-flex justify-content-evenly">
+            <div>
+                <h5 class="footer-title">Contact</h5>
+                <ul class="list-unstyled">
+                    <li>Av. Del Libertador 1473</li>
+                    <li>City of Buenos Aires, Argentina</li>
+                    <li>+54 (011) 0000-0000</li>
+                    <li>info@despertar.gob.ar</li>
+                </ul>
+                <div class="col-6 d-flex justify-content-center social-media w-100">
+                    <a class="footer-icon" href="http://instragram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="footer-icon" href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="footer-icon" href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="footer-icon" href="http://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="footer-title">Schedule</h5>
+                <ul class="list-unstyled">
+                    <li>Tuesday to friday: from 11.00 to 20.00.</li>
+                    <li>Saturday y Sunday: from 10.00 to 20.00.</li>
+                    <li>Monday: closed.</li>
+                </ul>
+                <div class="col-6 d-flex justify-content-center w-100">
+                    <img class="logo-footer" src="../images/logo.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
